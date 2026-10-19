@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="design.css">
+  <title>Dispensador de Agua - Control por Voz</title>
+  <!-- Versiones actualizadas y compatibles de TensorFlow.js y Speech Commands -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.17.0/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands@0.5.4/dist/speech-commands.min.js"></script>
+</head>
+<body>
+  <h1>Dispensador de Agua por Voz</h1>
+  <button id="btnConectar" onclick="conectarArduino()">Conectar Arduino</button>
+  <button id="btnInicio" onclick="iniciarDeteccion()" disabled>2. Iniciar Micrófono</button>
+
+  <h2 id="label-container">Estado: Esperando inicio...</h2>
+
+  <!-- Enlace al archivo de JavaScript separado -->
+  <script src="script.js"></script>
+</body>
+</html>

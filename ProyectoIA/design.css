@@ -1,0 +1,66 @@
+/* Configuración general */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Título */
+h1 {
+  color: #0288d1;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Estado / Etiqueta */
+#label-container {
+  background-color: #ffffff;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 25px;
+  font-weight: 400;
+  color: #555;
+  text-align: center;
+}
+
+#label-container b {
+  color: #0288d1;
+}
+
+/* Botones */
+button {
+  background-color: #0288d1;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: #01579b;
+  transform: translateY(-2px);
+}
+
+button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* Estado deshabilitado del botón */
+button:disabled {
+  background-color: #b0bec5;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
